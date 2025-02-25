@@ -1,0 +1,34 @@
+/* Formatação Inicial */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Passero+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Código */
+
+::-webkit-scrollbar {
+    background: #d4733b;
+    box-shadow: inset 2px 1px 7px #AA5C2F;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6a391d;
+    border-radius: 5px;
+}

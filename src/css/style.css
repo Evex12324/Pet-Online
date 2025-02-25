@@ -1,0 +1,117 @@
+/* Código */
+
+body {
+    background: #d4733b;
+    font-family: "Open Sans", serif;
+    text-align: center;
+    color: #fff2ea;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 40px;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 5.5rem;
+    font-family: "Passero One", serif;
+    color: #ffffff;
+}
+
+.bola {
+    grid-row: 1 / 4;
+    background: #d9d9d9;
+    width: 350px;
+    height: 350px;
+    border: 8px solid #6a391d;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px #AA5C2F;
+    margin: auto;
+    position: relative;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.forte strong {
+    font-size: 1.5em;
+}
+
+.acesso {
+    display: grid;
+    gap: 20px;
+}
+
+ul {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+
+li {
+    width: 400px;
+}
+
+li a {
+    display: block;
+    background: #d9d9d9;
+    text-transform: uppercase;
+    color: #d4733b;
+    font-weight: bold;
+    padding: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+li a:hover {
+    transform: scale(1.15);
+    background: #d4733b;
+    color: #6a391d;
+    border-color: #6a391d;
+    box-shadow: 1px 1px 12px #AA5C2F;
+}
+
+footer {
+    background: #6a391d;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@media(max-width: 1050px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .bola {
+        grid-row: 2;
+    }
+}
+
+@media(max-width: 600px) {
+    
+    h1 {
+        font-size: 4rem;
+    }
+
+    .bola {
+        width: 250px;
+        height: 250px;
+    }
+
+    li {
+        width: 250px;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
